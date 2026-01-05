@@ -1,0 +1,125 @@
+{
+    "widgets": [
+        {
+            "x": 0,
+            "y": 0,
+            "type": "static-text",
+            "title": "Welcome",
+            "width": 12,
+            "height": 3,
+            "content": "Welcome to EcoTrack AI, your personal sustainability assistant! Track your daily activities below to understand and reduce your carbon footprint. We'll analyze your inputs and provide personalized recommendations for a more sustainable lifestyle."
+        },
+        {
+            "x": 0,
+            "y": 3,
+            "type": "static-text",
+            "title": "Daily Activities Input",
+            "width": 12,
+            "height": 3,
+            "content": "Please log your daily activities below. Be as specific as possible for the most accurate calculations."
+        },
+        {
+            "x": 0,
+            "y": 6,
+            "type": "text-input",
+            "title": "Transportation",
+            "width": 6,
+            "height": 4,
+            "placeholder": "Describe your transportation today (e.g., '20km by car, 5km by bus')"
+        },
+        {
+            "x": 6,
+            "y": 6,
+            "type": "text-input",
+            "title": "Food Consumption",
+            "width": 6,
+            "height": 4,
+            "placeholder": "List your main meals and snacks today"
+        },
+        {
+            "x": 0,
+            "y": 10,
+            "type": "text-input",
+            "title": "Electricity Usage",
+            "width": 6,
+            "height": 4,
+            "placeholder": "Enter your electricity usage in kWh (0-50)"
+        },
+        {
+            "x": 6,
+            "y": 10,
+            "type": "text-input",
+            "title": "Purchases",
+            "width": 6,
+            "height": 4,
+            "placeholder": "List any significant purchases made today (e.g., clothes, electronics)"
+        },
+        {
+            "x": 0,
+            "y": 14,
+            "type": "inferred-text",
+            "title": "Carbon Footprint Analysis",
+            "width": 12,
+            "height": 8,
+            "prompt": "Based on these activities, calculate detailed carbon emissions:\n\nTransportation: [Transportation]\nFood: [Food Consumption]\nElectricity: [Electricity Usage]\nPurchases: [Purchases]\n\nProvide a breakdown of emissions for each category and calculate the total daily carbon footprint in kg CO2. Format the response clearly with category subtotals and a final total.",
+            "parameters": {
+                "model": "bedrock-anthropic.claude-3-5-sonnet-v2-0",
+                "temperature": 0
+            }
+        },
+        {
+            "x": 0,
+            "y": 22,
+            "type": "inferred-text",
+            "title": "Personalized Recommendations",
+            "width": 12,
+            "height": 8,
+            "prompt": "Analyze these activities and current emissions:\n\nTransportation: [Transportation]\nFood: [Food Consumption]\nElectricity: [Electricity Usage]\nPurchases: [Purchases]\n\nBased on the carbon footprint analysis in [Carbon Footprint Analysis], provide 3-5 specific, actionable recommendations to reduce carbon emissions. Prioritize by impact and ease of implementation. Be encouraging and specific.",
+            "parameters": {
+                "model": "bedrock-anthropic.claude-3-5-sonnet-v2-0",
+                "temperature": 0
+            }
+        },
+        {
+            "x": 0,
+            "y": 30,
+            "type": "inferred-text",
+            "title": "Sustainability Progress Report",
+            "width": 12,
+            "height": 8,
+            "prompt": "Based on the current activities and emissions:\n\nActivities: [Transportation], [Food Consumption], [Electricity Usage], [Purchases]\nAnalysis: [Carbon Footprint Analysis]\n\nGenerate an encouraging progress report that: 1) Identifies positive patterns in the user's behavior, 2) Suggests potential areas for improvement, and 3) Provides motivational insights about their environmental impact.",
+            "parameters": {
+                "model": "bedrock-anthropic.claude-3-5-sonnet-v2-0",
+                "temperature": 0
+            }
+        },
+        {
+            "x": 0,
+            "y": 38,
+            "type": "chat",
+            "title": "EcoAssistant Chat",
+            "width": 12,
+            "height": 12,
+            "parameters": {
+                "model": "bedrock-anthropic.claude-3-5-sonnet-v2-0",
+                "temperature": 0
+            },
+            "placeholder": "Ask any questions about sustainable living...",
+            "initialUserMessage": "Here are my current activities:\n\nTransportation: [Transportation]\nFood: [Food Consumption]\nElectricity: [Electricity Usage]\nPurchases: [Purchases]\n\nBased on this context, help me make more sustainable choices.",
+            "initialAssistantMessage": "I'm your EcoAssistant! I can help you with sustainable living tips, explain environmental impacts, and suggest eco-friendly alternatives. What would you like to know?"
+        },
+        {
+            "x": 0,
+            "y": 50,
+            "type": "inferred-text",
+            "title": "Dashboard Summary",
+            "width": 12,
+            "height": 6,
+            "prompt": "Based on all available information:\n\nActivities: [Transportation], [Food Consumption], [Electricity Usage], [Purchases]\nAnalysis: [Carbon Footprint Analysis]\nRecommendations: [Personalized Recommendations]\n\nCreate a concise dashboard summary highlighting: 1) Key sustainability achievements, 2) Most impactful current activities, 3) Quick tips for immediate improvement. Keep it motivational and action-oriented.",
+            "parameters": {
+                "model": "bedrock-anthropic.claude-3-5-sonnet-v2-0",
+                "temperature": 0
+            }
+        }
+    ]
+}
