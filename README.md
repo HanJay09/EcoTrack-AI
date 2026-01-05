@@ -61,4 +61,4 @@ The PartyRock app configuration is stored as a JSON file.
 ## 📜 Disclaimer
 EcoTrack AI provides **estimated insights only** and does not replace professional environmental audits or certifications.
 # EcoTrack-AI
-Your Personal Carbon Footprint Companion
+*Track today. Reduce tomorrow. Sustain the future.*
