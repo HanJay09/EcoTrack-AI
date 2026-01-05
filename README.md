@@ -53,7 +53,8 @@ The PartyRock app configuration is stored as a JSON file.
 ---
 
 ## 👥 Team
-- *Your Name Here*
+- Han Jay Tan
+- Sidharth Ganesan
 
 ---
 
