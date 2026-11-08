@@ -39,7 +39,7 @@ EcoTrack AI allows users to:
 ## 📄 PartyRock JSON
 The PartyRock app configuration is stored as a JSON file.
 
-➡️ **[Link to PartyRock JSON file will be added here]**
+➡️ **[partyrock/ecotrack_ai.json]**
 
 ---
 
