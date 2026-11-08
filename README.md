@@ -19,8 +19,6 @@ EcoTrack AI allows users to:
 - Generate weekly and monthly sustainability progress summaries
 - Interact with an AI chatbot for sustainability education
 
-The app is designed to be **simple, friendly, and beginner-friendly**, making sustainability accessible to everyone.
-
 ---
 
 ## 🛠️ Built With
